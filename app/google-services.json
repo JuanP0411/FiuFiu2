@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14453932680",
+    "project_id": "fiufiu-23f76",
+    "storage_bucket": "fiufiu-23f76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14453932680:android:3c0a9e77026bd2fd3ed53d",
+        "android_client_info": {
+          "package_name": "com.icesi.fiufiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14453932680-vqt8bijbrb7udv78tijn5pbhkq3rfsei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLWn8K7E97JX-DIBZ9WTHG9-mWEiBdgEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14453932680-vqt8bijbrb7udv78tijn5pbhkq3rfsei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

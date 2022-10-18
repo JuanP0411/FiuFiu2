@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text="Servicio"
+                android:fontFamily="@font/mada_medium"
+                android:textColor="#009688"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+            <TextView
+                android:id="@+id/priceProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text="$25.000.000"
+                android:fontFamily="@font/mada_medium"
+                android:textColor="#009688"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productInfo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/productImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/polo_cabal" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/productInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/mada_medium"
+                android:text="El socialismo no funciona"
+                android:textColor="@color/bGradient"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+            <Button
+                android:id="@+id/pedirBtn"
+                android:layout_width="118dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/style_bottom"
+                android:backgroundTint="#009688"
+                android:text="Pedir"
+                android:fontFamily="@font/mada_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout8" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="150dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/priceProduct"
+                app:layout_constraintTop_toBottomOf="@+id/priceProduct"
+                app:layout_constraintVertical_bias="0.4">
+
+                <TextView
+                    android:id="@+id/lessText"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/mada_medium"
+                    android:background="@drawable/circle"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/amountText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/amountText" />
+
+                <TextView
+                    android:id="@+id/moreText"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/circle"
+                    android:text="+"
+                    android:fontFamily="@font/mada_medium"
+                    android:textAlignment="center"
+                    android:textSize="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/amountText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/amountText" />
+
+                <TextView
+                    android:id="@+id/amountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="1"
+                    android:fontFamily="@font/mada_medium"
+                    android:textColor="@color/bGradient"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/moreText"
+                    app:layout_constraintStart_toEndOf="@+id/lessText"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock: "
+                android:fontFamily="@font/mada_medium"
+                android:textColor="@color/bGradient"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout8" />
+
+            <TextView
+                android:id="@+id/amoutStockProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:fontFamily="@font/mada_medium"
+                app:layout_constraintStart_toEndOf="@+id/textView28"
+                app:layout_constraintTop_toTopOf="@+id/textView28" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

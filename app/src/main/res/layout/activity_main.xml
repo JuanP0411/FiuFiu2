@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/initBackgroundImageView"
+        app:srcCompat="@drawable/brand_logov3" />
+
+    <ImageView
+        android:id="@+id/initBackgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_v2" />
+
+    <Button
+        android:id="@+id/selectConsumerBtn"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/style_bottom"
+        android:backgroundTint="#CC009688"
+        android:fontFamily="@font/mada_medium"
+        android:text="Busco amigos FiuFiu"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessText" />
+
+    <Button
+        android:id="@+id/selectSellerBtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/style_bottom"
+        android:backgroundTint="#CC009688"
+        android:fontFamily="@font/mada_medium"
+        android:text="Brindo servicios FiuFiu"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/initBackgroundImageView"
+        app:layout_constraintEnd_toEndOf="@+id/selectConsumerBtn"
+        app:layout_constraintStart_toStartOf="@+id/selectConsumerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/selectConsumerBtn"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/lessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/mada_medium"
+        android:text="Elige un rol"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

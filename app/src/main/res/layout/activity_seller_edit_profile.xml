@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/mada_medium"
+                android:text="Edita tu Perfil"
+                android:textColor="#009688"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/marketProfilePhotoEdit"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@drawable/avatar_icon" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/mada_medium"
+                android:text="foto"
+                android:textColor="@color/bGradient"
+                android:textColorHint="@color/bGradient" />
+
+            <EditText
+                android:id="@+id/nameMarketEdit"
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shaping_plain_text"
+                android:ems="10"
+                android:fontFamily="@font/mada_medium"
+                android:hint="tu nombre"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/bGradient"
+                android:textColorHint="@color/bGradient"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/descriptionMarketEdit"
+                android:layout_width="260dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shaping_plain_text"
+                android:ems="10"
+                android:fontFamily="@font/mada_medium"
+                android:hint="descripción"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/bGradient"
+                android:textColorHint="@color/bGradient"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/passwordSellerEdit"
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shaping_plain_text"
+                android:ems="10"
+                android:fontFamily="@font/mada_medium"
+                android:hint="contraseña"
+                android:inputType="textPersonName|textPassword"
+                android:minHeight="48dp"
+                android:textColor="@color/bGradient"
+                android:textColorHint="@color/bGradient"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/phoneMarketEdit"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shaping_plain_text"
+                android:ems="10"
+                android:fontFamily="@font/mada_medium"
+                android:hint="contacto"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/bGradient"
+                android:textColorHint="@color/bGradient"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/editMarketDoneBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/style_bottom"
+                android:backgroundTint="#009688"
+                android:fontFamily="@font/mada_medium"
+                android:text="Guardar cambios "
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
