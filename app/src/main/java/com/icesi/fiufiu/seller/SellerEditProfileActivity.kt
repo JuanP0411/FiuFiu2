@@ -53,7 +53,7 @@ class SellerEditProfileActivity : AppCompatActivity() {
     private fun loadInfo() {
         binding.nameMarketEdit.setText(service.marketName)
         binding.descriptionMarketEdit.setText(service.marketDescription)
-        binding.passwordSellerEdit.setText(seller.password)
+
         binding.phoneMarketEdit.setText(service.phoneNumber)
     }
 }

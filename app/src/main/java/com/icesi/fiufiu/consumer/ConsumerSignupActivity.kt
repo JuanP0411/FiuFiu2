@@ -35,7 +35,7 @@ class ConsumerSignupActivity : AppCompatActivity() {
 
                 Firebase.auth.createUserWithEmailAndPassword(email, password).addOnSuccessListener{
                     var id = Firebase.auth.currentUser?.uid
-                    var user = User(id.toString(), name, email, password,"","","consumer")
+                    var user = User(id.toString(), name, email,"","","consumer")
 
                     Firebase.firestore.collection("users")
                         .document(user.id)
