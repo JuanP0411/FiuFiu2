@@ -68,8 +68,8 @@ class MainActivity : AppCompatActivity() {
                 changeActivity("seller")
         }
 
-        binding.selectSellerBtn.setOnClickListener {
-                changeActivity("seller")
+        binding.selectConsumerBtn.setOnClickListener {
+                changeActivity("consumer")
         }
 
     }

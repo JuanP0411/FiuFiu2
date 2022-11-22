@@ -70,8 +70,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/productsRecycler"
-            android:layout_width="347dp"
-            android:layout_height="756dp"
+            android:layout_width="349dp"
+            android:layout_height="601dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
